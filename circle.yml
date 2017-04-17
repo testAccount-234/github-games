@@ -4,4 +4,4 @@ dependencies:
 
 test:
    override:
-      - node-qunit-phantomjs index.html
+      - node-qunit-phantomjs test/index.html
