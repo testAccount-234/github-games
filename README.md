@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/GERey/github-games/tree/unit-test-completed.svg?style=svg)](https://circleci.com/gh/GERey/github-games/tree/unit-test-completed)
+
 ## Welcome to GitHub Games
 
 A project based learning activity for people who are getting started with Git and GitHub.
