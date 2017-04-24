@@ -53,6 +53,7 @@
         score,         // the current score
         vscore,        // the currently displayed score (it catches up to score in small chunks - like a spinning slot machine)
         rows,          // number of completed rows in the current game
+        name,          // player name that player enters
         step;          // how long before current piece drops by 1 row
 
     //-------------------------------------------------------------------------
@@ -210,6 +211,7 @@
     function clearActions()         { actions = []; }
     function setCurrentPiece(piece) { current = piece || randomPiece(); invalidate();     }
     function setNextPiece(piece)    { next    = piece || randomPiece(); invalidateNext(); }
+    function clearName()            { name = ""; }
 
     function reset() {
       dt = 0;
@@ -217,6 +219,7 @@
       clearBlocks();
       clearRows();
       clearScore();
+      clearName();
       setCurrentPiece(next);
       setNextPiece();
     }

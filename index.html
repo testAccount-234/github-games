@@ -13,11 +13,28 @@
       <p><canvas id="upcoming"></canvas></p>
       <p>score <span id="score">00000</span></p>
       <p>rows <span id="rows">0</span></p>
+      <form id="nameForm" action="/action_page.php" method="get">
+        Username: <input type="text" name="fname"><br>
+        <input type="button" onclick="formSubmit()" value="Submit">
+      </form>
+      <p id="username" style="display:none;" >"Username: "</p>
+
+
     </div>
     <canvas id="canvas">
       Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
     </canvas>
   </div>
+
+  <script>
+    function formSubmit() {
+      var nameValue = document.getElementById("nameForm").value;
+      document.getElementById("nameForm").style.display="none";
+      document.getElementById("username").style.display="block";
+
+
+    }
+  </script>
 
   <script src="stats.js"></script>
   <script src="tetris.js"></script>
