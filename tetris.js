@@ -396,8 +396,8 @@
       ctx.strokeRect(x*dx, y*dy, dx, dy)
     }
 
-    function returnPlayerName() {
-      return "george";
+    function meaningOfLife() {
+      return 42;
     }
 
     //-------------------------------------------------------------------------
