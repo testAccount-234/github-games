@@ -1,3 +1,6 @@
+dependencies:
+   override:
+      - npm install -g node-qunit-phantomjs
 test:
    override:
       - node-qunit-phantomjs test/index.html
